@@ -132,6 +132,7 @@
     <ClCompile Include="flags.cpp" />
     <ClCompile Include="MS_reg.cpp" />
     <ClCompile Include="ram.cpp" />
+    <ClCompile Include="ram_load.cpp" />
     <ClCompile Include="register_1_byte.cpp" />
     <ClCompile Include="register_2_byte.cpp" />
     <ClCompile Include="main.cpp" />
@@ -142,6 +143,7 @@
     <ClInclude Include="instructions.hpp" />
     <ClInclude Include="MS_reg.hpp" />
     <ClInclude Include="ram.hpp" />
+    <ClInclude Include="ram_load.hpp" />
     <ClInclude Include="register_1_byte.hpp" />
     <ClInclude Include="register_2_byte.hpp" />
   </ItemGroup>

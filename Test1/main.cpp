@@ -8,6 +8,7 @@
 #include "ram.hpp"
 #include "MS_reg.hpp"
 #include "cpu.hpp"
+#include "ram_load.hpp"
 
 typedef uint8_t byte;
 typedef uint16_t addr;
@@ -15,8 +16,8 @@ typedef uint16_t addr;
 
 int main()
 {
-    CPU::cpu CPU;
-    CPU.RAM.init();
+    CPU::cpu CPU1;
+    /*CPU.RAM.init();
     CPU.RAM.write((int)CPU::cpu::instructions::LDAI, 0);
     CPU.RAM.write(100, 1);
     CPU.RAM.write((int)CPU::cpu::instructions::LDBI, 2);
@@ -32,7 +33,9 @@ int main()
     for (int i = 0; i < 25; i++)
     {
         CPU.cycle(1);
-    }
+    }*/
+
+    load_func(CPU1);
 
     return 0;
 }
